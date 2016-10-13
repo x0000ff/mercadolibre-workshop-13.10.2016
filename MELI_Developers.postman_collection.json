@@ -1,0 +1,239 @@
+{
+	"variables": [],
+	"info": {
+		"name": "MELI Developers",
+		"_postman_id": "e6fe02ae-f2ee-dc23-df33-aac47aefdfe6",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/users/me",
+			"request": {
+				"url": "https://api.mercadolibre.com/users/me?access_token=APP_USR-1234567890",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "users/test_user",
+			"request": {
+				"url": "https://api.mercadolibre.com/users/test_user?access_token=APP_USR-1234567890",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"site_id\":\"MLC\"\n    \n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/sites/MLC/category_predictor/predict",
+			"request": {
+				"url": "https://api.mercadolibre.com/sites/MLC/category_predictor/predict?title=polera",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/items",
+			"request": {
+				"url": "https://api.mercadolibre.com/items?access_token=APP_USR-1234567890",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\":\"Lentes rayban wayfarer NO COMPRAR TEST!!\",\n  \"category_id\":\"XXXXXXXX\",\n  \"price\":500000,\n  \"currency_id\":\"CLP\",\n  \"available_quantity\":10,\n  \"buying_mode\":\"buy_it_now\",\n  \"listing_type_id\":\"bronze\",\n  \"condition\":\"new\",\n  \"description\": {\n      \"text\":\"Los <b>mejores lentes</b> de sol del mundo!\",\n      \"plain_text\":\"Los mejores lentes de sol del mundo!\"\n  },\n  \"video_id\": \"RXWn6kftTHY\",\n  \"warranty\": \"12 months by Ray Ban\",\n  \"pictures\":[\n    {\"source\":\"http://cdn1.smartbuyglasses.com/public/images/designer_sunglasses/Ray%20Ban/Ray%20Ban%20RB%204165%20601_8G.jpg\"},\n    {\"source\":\"https://d26hhearhq0yio.cloudfront.net/content/misterspex/produkte/grafiken/08-110120-0001-01_a1.jpg\"}\n  ],\n    \"shipping\": {\n      \"local_pick_up\": true,\n      \"free_shipping\": false\n    }\n\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/items/ITEM_ID",
+			"request": {
+				"url": "https://api.mercadolibre.com/items/MLC437868335/description?access_token=APP_USR-1234567890",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \n  \"text\":\"Los mejores <b>Rayban Wayfarer</b>\",\n  \"plain_text\":\"Los mejores Rayban Wayfarer\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/currencies",
+			"request": {
+				"url": "https://api.mercadolibre.com/currencies?access_token=APP_USR-1234567890",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/sites/MLC/categories",
+			"request": {
+				"url": "https://api.mercadolibre.com/sites/MLC/categories?access_token=APP_USR-1234567890",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/sites/MLC/categories copy",
+			"request": {
+				"url": "https://api.mercadolibre.com/sites/MLC/categories?access_token=APP_USR-1234567890",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/sites/MLC/listing_types",
+			"request": {
+				"url": "https://api.mercadolibre.com/sites/MLC/listing_types?access_token=APP_USR-1234567890&title",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/categories/{Category_id}",
+			"request": {
+				"url": "https://api.mercadolibre.com/categories/",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/sites/MLM/search",
+			"request": {
+				"url": "https://api.mercadolibre.com/sites/MLM/search?q=llantas&discount=10-100&condition=new",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/sites/MLC/search",
+			"request": {
+				"url": "https://api.mercadolibre.com/sites/MLC/search?q=departamentos en arriendo",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/items/ITEM",
+			"request": {
+				"url": "https://api.mercadolibre.com/items/MLC438063434?access_token=APP_USR-1234567890",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "questions/search",
+			"request": {
+				"url": "https://api.mercadolibre.com/questions/search/?access_token=APP_USR-1234567890&item=MLC438975413",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "sites / MLC / search",
+			"request": {
+				"url": "https://api.mercadolibre.com/sites/MLC/search?seller_id=220221340",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

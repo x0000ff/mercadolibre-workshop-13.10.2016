@@ -1,0 +1,65 @@
+{
+	"variables": [],
+	"info": {
+		"name": "MELI Auth",
+		"_postman_id": "065bd41c-5a0a-efdc-5452-eda920304929",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Client Side",
+			"description": "",
+			"item": [
+				{
+					"name": "OAuth2 :: Get Token",
+					"request": {
+						"url": "http://auth.mercadolibre.com/authorization?response_type=token&client_id=3140000000000",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"description": "Redirect to:\n\n```\n<Redirect URI from App settings>#access_token=<TOKEN>&expires_in=<EXPIRATION IN SECONDS>&user_id=<AUTHENTICATED_USER_ID>&domains=<Redirect URI Domain>\n```\n\n```\nhttps://myserver.com/#access_token=APP_USR-3144890205615224-101312-0d1a75a7d0769b8286b2fd12e541d43e__L_M__-133453801&expires_in=21600&user_id=133453801&domains=myserver.com\n```"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Server Side",
+			"description": "",
+			"item": [
+				{
+					"name": "OAuth2 :: Get Code",
+					"request": {
+						"url": "http://auth.mercadolibre.com/authorization?response_type=code&client_id=3140000000000&redirect_uri=https://www.getpostman.com/oauth2/callback",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "OAuth2 :: Get Token",
+					"request": {
+						"url": "https://api.mercadolibre.com/oauth/token?client_id=3140000000000&client_secret=XDT90000000000000000&grant_type=authorization_code&code=TG-57ffb1cae4b0cd95a6a13021-133453801&redirect_uri=https://www.getpostman.com/oauth2/callback",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
