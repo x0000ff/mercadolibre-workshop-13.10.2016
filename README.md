@@ -10,7 +10,7 @@
 	[http://developers.mercadolibre.com/es/producto-autorizacion/](http://developers.mercadolibre.com/es/producto-autorizacion/)
 
 	- Server side
-	[http://developers.mercadolibre.com/es/autorizacion-client-side/](http://developers.mercadolibre.com/es/autorizacion-client-side/)
+	[http://developers.mercadolibre.com/es/autorizacion-server-side/](http://developers.mercadolibre.com/es/autorizacion-server-side/)
 
 	- Client side
 	[http://developers.mercadolibre.com/es/autorizacion-client-side/](http://developers.mercadolibre.com/es/autorizacion-client-side/)
