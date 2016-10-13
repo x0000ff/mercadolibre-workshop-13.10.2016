@@ -15,6 +15,10 @@
 	- Client side
 	[http://developers.mercadolibre.com/es/autorizacion-client-side/](http://developers.mercadolibre.com/es/autorizacion-client-side/)
 
+# Postman
+
+Download from [https://www.getpostman.com](https://www.getpostman.com)
+
 # Logout in Postman
 
 1. Make `GET` request to [https://mercadolibre.cl](https://mercadolibre.cl)
