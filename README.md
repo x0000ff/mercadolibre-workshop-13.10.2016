@@ -51,7 +51,7 @@ Scopes: write offline_access read
 # OAuth 2.0 Settings for Postman
 
 | Key | Value |
-|:---:|:-----:|
+|:----|:------|
 | Callback URL | https://www.getpostman.com/oauth2/callback |
 | Token Name | TOKEN_NAME |
 | Auth URL | http://auth.mercadolibre.com/authorization |
