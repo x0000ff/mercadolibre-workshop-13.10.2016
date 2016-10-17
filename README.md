@@ -73,4 +73,4 @@ Scopes: write offline_access read
 	[MELI\_Auth.postman\_collection.json](./MELI_Auth.postman_collection.json)
 
 - All endpoints for workshop  
-	[MELI\_Auth.postman\_collection.json](./MELI_Auth.postman_collection.json)
+	[MELI\_Developers.postman\_collection.json](./MELI_Developers.postman_collection.json)
