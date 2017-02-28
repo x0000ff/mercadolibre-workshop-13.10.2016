@@ -10,7 +10,7 @@
 	[http://developers.mercadolibre.com/es/producto-autorizacion/](http://developers.mercadolibre.com/es/producto-autorizacion/)
 
 	- Server side
-	[http://developers.mercadolibre.com/es/autorizacion-client-side/](http://developers.mercadolibre.com/es/autorizacion-client-side/)
+	[http://developers.mercadolibre.com/es/autorizacion-server-side/](http://developers.mercadolibre.com/es/autorizacion-server-side/)
 
 	- Client side
 	[http://developers.mercadolibre.com/es/autorizacion-client-side/](http://developers.mercadolibre.com/es/autorizacion-client-side/)
@@ -73,4 +73,4 @@ Scopes: write offline_access read
 	[MELI\_Auth.postman\_collection.json](./MELI_Auth.postman_collection.json)
 
 - All endpoints for workshop  
-	[MELI\_Developers.postman\_collection.json](./MELI_Developers.postman_collection.json)
+  [MELI\_Developers.postman\_collection.json](./MELI_Developers.postman_collection.json)
